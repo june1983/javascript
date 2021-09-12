@@ -1,0 +1,27 @@
+
+Node.jsをインストール（npmもついでにインストール）
+
+バージョン確認
+node -v
+npm -v 
+
+yarnをインストールする
+npm install --global yarn
+
+Userの配下にreact-pjというフォルダを作成します。その後、作成したフォルダに移動
+mkdir react-pj
+cd react-pj
+
+react-pfフォルダに移動したら、以下のコマンドを実行し、react開発環境を実行します。
+react-appの箇所は任意の名前でOKです
+npx create-react-app react-app
+もしくは
+npm init react-app (プロジェクト名)
+
+すると、react-appというフォルダが作成されます。
+このフォルダに移動し、npm startコマンドを実行します。
+cd react-app
+npm start
+
+【Windows10】React.jsのプロジェクトを作成する方法
+https://work-note32.com/react-project-create#toc3

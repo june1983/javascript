@@ -1,0 +1,317 @@
+/*FOR ALL PAGES  */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  background: #fbfbfb;
+  color: rgba(var(--i1d,38,38,38),1);
+  /*#3d464d*/
+  font-weight: normal;
+  font-size: 13px;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #2895F1;
+  outline: none;
+}
+
+.a_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #6ab9e8 !important;
+}
+
+/*INDEX HEADER */
+.header{
+  width: 100%;
+  height: 54px;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  /*position: fixed;
+  z-index: 10;*/
+}
+
+.header > .logo{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.header > .logo > span{
+  font-size: 27px;
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+/* MAIN VISUAL */
+.wrapper{
+  width: 100%;
+  /*max-width: 935px;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  margin: 0 auto 30px;*/
+}
+
+@media (min-width: 736px){
+    .wrapper {
+      /*width: calc(100% - 40px);*/
+      box-sizing: content-box;
+      /*padding: 30px 20px 0;*/
+  }
+}
+
+.main-visual{
+  width: 100%;
+  height: 100vh;
+  /*text-align: center;*/
+  background-image: url("../images/bangkok-thailand.jpg");
+  background-size: cover;
+  /*border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);*/
+}
+
+@media (min-width: 736px){
+  .main-visual {
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 735px) {
+  .main-visual {
+    height: 300px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+
+/* ARTICLE */
+.flex-wrapper{
+
+  
+}
+
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row:before{
+	content:"";
+	display: block;
+	width:0;
+	height:0;
+	padding-bottom:3%;
+}
+
+@media (min-width: 736px){
+  .flex-row {
+      margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 735px) {
+  .flex-row {
+    margin-bottom: 3px;
+  }
+}
+
+.flex-item-01,.flex-item-02,.flex-item-03{
+  flex: 1 0 0%;
+  height: 250px;
+  background-size: cover;
+}
+
+.flex-item-01 a,.flex-item-02 a,.flex-item-03 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-item-01 a:hover,.flex-item-02 a:hover,.flex-item-03 a:hover{
+  background-color: black;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.item01{
+  background-image: url("../images/Songkran01.jpg");
+}
+
+.item02{
+  background-image: url("../images/DSCN2105.jpg");
+}
+
+.item03{
+  background-image: url("../images/Thailand_1200x1200.jpg");
+}
+
+.item04{
+  background-image: url("../images/P1013410.JPG");
+}
+
+.item05{
+  background-image: url("../images/170706113449-thailand.jpg");
+}
+
+.item06{
+  background-image: url("../images/Songkran02.jpg");
+}
+
+.item07{
+  background-image: url("../images/Songkran03.jpg");
+}
+
+.item08{
+  background-image: url("../images/IMG_0864.JPG");
+}
+
+.item09{
+  background-image: url("../images/IMG_0498.JPG");
+}
+
+.item10{
+  background-image: url("../images/IMG_0432.JPG");
+}
+
+.item11{
+  background-image: url("../images/IMG_0329.JPG");
+}
+
+.item12{
+  background-image: url("../images/CNO-THA.jpg");
+}
+
+.item13{
+  background-image: url("../images/bangkok.jpg");
+}
+
+.item14{
+  background-image: url("../images/DSCN2139.jpg");
+}
+
+.item15{
+  background-image: url("../images/DSCN2316.jpg");
+}
+
+.item16{
+  background-image: url("../images/IMG_0056.JPG");
+}
+
+.item17{
+  background-image: url("../images/IMG_0057(1).JPG");
+}
+
+.item18{
+  background-image: url("../images/IMG_0063.JPG");
+}
+
+.item19{
+  background-image: url("../images/IMG_0088.JPG");
+}
+
+.item20{
+  background-image: url("../images/IMG_0156.JPG");
+}
+
+.item21{
+  background-image: url("../images/IMG_0276.JPG");
+}
+
+.item22{
+  background-image: url("../images/IMG_0301.JPG");
+}
+
+.item23{
+  background-image: url("../images/IMG_0309.JPG");
+}
+
+.item24{
+  background-image: url("../images/IMG_0314.JPG");
+}
+
+.item25{
+  background-image: url("../images/IMG_0409.JPG");
+}
+
+.item26{
+  background-image: url("../images/IMG_0424.JPG");
+}
+
+.item27{
+  background-image: url("../images/IMG_0655.JPG");
+}
+
+.item28{
+  background-image: url("../images/IMG_0988.JPG");
+}
+
+.item29{
+  background-image: url("../images/IMG_1145.JPG");
+}
+
+.item30{
+  background-image: url("../images/IMG_0254.JPG");
+}
+
+@media (min-width: 736px){
+  .flex-item-01, .flex-item-02{
+    margin-right: 28px;
+  }
+}
+
+@media (max-width: 735px) {
+  .flex-item-01, .flex-item-02{
+    margin-right: 3px;
+  }
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.bigimg {
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 80px;
+  top: 80px;
+}
+
+.close-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(var(--f52,142,142,142),1);
+  margin-bottom: 52px;
+}
