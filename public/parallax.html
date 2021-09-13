@@ -1,67 +1,88 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Life in Bangkok</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/master.css">
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <style>
-body {
-  height: 4000px;
-}
-
-.parallax-img {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url(https://picsum.photos/id/163/900/400);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: center top;
-}
-.parallax-img h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px 120px;
-  color: #ffffff;
-  font-size: 2em;
-  border: 2px solid #ffffff;
-  background-color: rgba(0, 0, 0, 0.4);
-  transform: translate(-50%, -50%);
-}
-  </style>
+<meta charset="UTF-8">
+<title>SPACE TRAVELER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/parallax.css">
+<link rel="stylesheet" href="css/footer.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/parallax.js"></script>
 </head>
 <body>
+  <!-- Site header -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="/">SPACE TRAVELER</a>
+      </div>
+    </div>
+  </header>
+  <!-- Site contents -->
   <div class="wrapper">
+    <div class="text-area-01"></div>
 		<div class="parallax-img">
       <h1>DEMO</h1>  
     </div>
-    <article>
-      <div class="parallax-img">
-        <h1>DEMO</h1>  
-      </div>
-    </article>
   </div>
-  <footer class="footer">
-    <p>&copy;Copyright Life in Bangkok All rights reserved.</p>
+  <!-- Site footer -->
+  <footer id="footer">
+    <section class="primary">
+      <div class="flex">
+        <div class="left">
+          <p class="logo"><a href="#">COMPANY</a></p>
+          <p class="address">
+            〒100-0005 東京都千代田区丸の内１丁目<br>
+            TEL : 123-456-9999　/　FAX : 123-456-0000
+          </p>
+          <ul class="sns-navi">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="navi-section">
+            <p class="parent"><a href="#">商品</a></p>
+            <ul class="navi">
+              <li><a href="#">商品A</a></li>
+              <li><a href="#">商品B</a></li>
+              <li><a href="#">商品C</a></li>
+              <li><a href="#">商品D</a></li>
+            </ul>
+          </div>
+          <div class="navi-section">
+            <p class="parent"><a href="#">企業情報</a></p>
+            <ul class="navi">
+              <li><a href="#">会社案内</a></li>
+              <li><a href="#">ニュースリリース</a></li>
+              <li><a href="#">IR</a></li>
+              <li><a href="#">CSR</a></li>
+              <li><a href="#">採用情報</a></li>
+            </ul>
+          </div>
+          <div class="navi-section">
+            <p class="parent"><a href="#">キャンペーン情報</a></p>
+            <p class="parent"><a href="#">CMギャラリー</a></p>
+            <p class="parent"><a href="#">お問い合わせ</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="secondary">
+      <ul class="sitenavi">
+        <li><a href="#">サイトマップ</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <p class="copyright">Copyright WEBSITE,Inc. All rights reserved.</p>
+    </section>
   </footer>
-  <script>
-    $(window).on('scroll', function(){
-
-    var scrollTop = $(window).scrollTop();
-    var bgPosition = scrollTop / 3;//スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
-
-    if(bgPosition){
-      $('.parallax-img').css('background-position', 'center top -'+ bgPosition + 'px');
-    }
-    });
-  </script>
 </body>
 </html>

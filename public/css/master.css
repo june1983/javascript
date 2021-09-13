@@ -5,8 +5,17 @@
 }
 
 body{
-  font-family: 'Open Sans', 'Roboto', sans-serif;
-  background: #fbfbfb;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #010a50 100%
+  );
   color: rgba(var(--i1d,38,38,38),1);
   /*#3d464d*/
   font-weight: normal;
@@ -29,27 +38,27 @@ a{
   background: #6ab9e8 !important;
 }
 
-/*INDEX HEADER */
+/* HEADER */
 .header{
   width: 100%;
   height: 54px;
-  background-color: #fbfbfb;
+  background-color: #010a50;
   border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
-  /*position: fixed;
-  z-index: 10;*/
+  position: fixed;
+  z-index: 10;
 }
 
 .header > .logo{
     display: block;
     text-align: center;
-    padding-top: 10px;
-    cursor: pointer;
+    padding-top: 7px;
 }
 
-.header > .logo > span{
+.header > .logo > a{
   font-size: 27px;
-  font-family: 'Satisfy', cursive;
-  font-weight: bold;
+  color: aliceblue;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 /* MAIN VISUAL */
@@ -79,7 +88,7 @@ a{
 
 @media (min-width: 736px){
   .main-visual {
-      margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
   }
 }
 
@@ -87,7 +96,7 @@ a{
   .main-visual {
     height: 300px;
     text-align: left;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
   }
 }
 
@@ -308,10 +317,172 @@ a{
 }
 
 /* FOOTER */
-.footer {
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  color: rgba(var(--f52,142,142,142),1);
-  margin-bottom: 52px;
+.site-footer {
+  background-color:#010a50;
+  font-family: 'Roboto', sans-serif;
+  padding:45px 0 20px;
+  font-size:14px;
+  line-height:24px;
+  color:aliceblue;
+}
+
+.site-footer hr {
+  border-top-color:aliceblue;
+  opacity:0.5
+}
+
+.site-footer hr.small {
+  margin:20px 0
+}
+
+.site-footer h6 {
+  color:aliceblue; 
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer p {
+  color:aliceblue; 
+}
+
+.site-footer p::before {
+  display: none;
+}
+
+.site-footer a {
+  color:aliceblue;
+}
+
+.site-footer a:hover {
+  color:#bf1650;
+  text-decoration:none;
+}
+
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li {
+  display:block
+}
+
+.footer-links a {
+  color:aliceblue
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#bf1650;
+  text-decoration:none;
+}
+
+.footer-links.inline li {
+  display:inline-block
+}
+
+.site-footer .social-icons {
+  text-align:right
+}
+
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.copyright-text {
+  margin:0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+  }
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a {
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover {
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover {
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover {
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover {
+  background-color:#ea4c89
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
