@@ -44,7 +44,7 @@ a{
 .header{
   width: 100%;
   height: 54px;
-  background-color: #010a50;
+  background-color: #040825;
   border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
   position: fixed;
   z-index: 10;
@@ -57,10 +57,9 @@ a{
 }
 
 .header > .logo > a{
-  font-size: 27px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
   color: aliceblue;
-  font-weight: 300;
+  font-weight: 100;
   text-decoration: none;
 }
 
@@ -153,7 +152,7 @@ a{
 }
 
 .item01{
-  background-image: url("../img/Songkran01.jpg");
+  background-image: url("../img/spacex-uj3hvdfQujI-unsplash.jpg");
 }
 
 .item02{
