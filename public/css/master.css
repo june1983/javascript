@@ -8,16 +8,7 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
-  background: linear-gradient(
-    to top,
-    #fcc5e4 0%,
-    #fda34b 15%,
-    #ff7882 35%,
-    #c8699e 52%,
-    #7046aa 71%,
-    #0c1db8 87%,
-    #010a50 100%
-  );
+  background-color: aliceblue;
   color: rgba(var(--i1d,38,38,38),1);
   /*#3d464d*/
   font-weight: normal;
@@ -30,7 +21,6 @@ img{
 
 a{
   text-decoration: none;
-  color: #2895F1;
   outline: none;
 }
 
@@ -45,7 +35,6 @@ a{
   width: 100%;
   height: 54px;
   background-color: #040825;
-  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
   position: fixed;
   z-index: 10;
 }
@@ -82,10 +71,10 @@ a{
 .main-visual{
   width: 100%;
   height: 100vh;
+  padding: 100px;
   /*text-align: center;*/
   background-image: url("../img/Moon-missions.jpg");
   background-size: cover;
-  /*border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);*/
 }
 
 @media (min-width: 736px){
@@ -96,9 +85,8 @@ a{
 
 @media (max-width: 735px) {
   .main-visual {
-    height: 300px;
-    text-align: left;
-    /*margin-bottom: 25px;*/
+    height: 750px;
+    padding: 60px 20px 0px 20px;
   }
 }
 
@@ -152,47 +140,47 @@ a{
 }
 
 .item01{
-  background-image: url("../img/spacex-uj3hvdfQujI-unsplash.jpg");
+  background-image: url("../img/1-mars.jpg");
 }
 
 .item02{
-  background-image: url("../img/DSCN2105.jpg");
+  background-image: url("../img/alexander-andrews-yOIT88xWkbg-unsplash.jpg");
 }
 
 .item03{
-  background-image: url("../img/Thailand_1200x1200.jpg");
+  background-image: url("../img/Vaisala_LIFT-Mars_the_Red_Planet-1600x900.jpg");
 }
 
 .item04{
-  background-image: url("../img/P1013410.JPG");
+  background-image: url("../img/patrick-hendry-_RYmx4Jz1UM-unsplash.jpg");
 }
 
 .item05{
-  background-image: url("../img/170706113449-thailand.jpg");
+  background-image: url("../img/brian-mcgowan-I0fDR8xtApA-unsplash.jpg");
 }
 
 .item06{
-  background-image: url("../img/Songkran02.jpg");
+  background-image: url("../img/victor-CxP_ABKfOms-unsplash.jpg");
 }
 
 .item07{
-  background-image: url("../img/Songkran03.jpg");
+  background-image: url("../img/Color-Full\ Moon\ ©\ Nicolas\ Lefaudeux.jpg");
 }
 
 .item08{
-  background-image: url("../img/IMG_0864.JPG");
+  background-image: url("../img/daniele-colucci-OtXJhYjbKeg-unsplash.jpg");
 }
 
 .item09{
-  background-image: url("../img/IMG_0498.JPG");
+  background-image: url("../img/federico-rizzarelli-XamaAMClSP0-unsplash.jpg");
 }
 
 .item10{
-  background-image: url("../img/IMG_0432.JPG");
+  background-image: url("../img/mike-kiev-Opzk_hvwO9Q-unsplash.jpg");
 }
 
 .item11{
-  background-image: url("../img/IMG_0329.JPG");
+  background-image: url("../img/nasa-7Cz6bWjdlDs-unsplash.jpg");
 }
 
 .item12{

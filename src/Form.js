@@ -13,44 +13,34 @@ function Form() {
   };
   const intialValues = {
     firstName: "bill",
-    lastName: "luo",
-    email: "bluebill1049@hotmail.com",
-    age: -1
+    lastName: "",
+    email: "",
+    age: ""
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="firstName">First Name</label>
-      <input
-        defaultValue={intialValues.firstName}
-        placeholder="bill"
-        {...register("firstName", {
-          validate: (value) => value !== "bill"
-        })}
-      />
-      {errors.firstName && <p>Your name is not bill</p>}
-
-      <label htmlFor="lastName">Last Name</label>
+      <label htmlFor="lastName">名前</label>
       <input
         defaultValue={intialValues.lastName}
-        placeholder="luo"
+        placeholder=""
         {...register("lastName", {
           validate: (value) => value.length > 3
         })}
       />
-      {errors.lastName && <p>Your last name is less than 3 characters</p>}
+      {errors.lastName && <p>名前は3文字以上、入力してください</p>}
 
       <label htmlFor="email">Email</label>
       <input
         defaultValue={intialValues.email}
-        placeholder="bluebill1049@hotmail.com"
+        placeholder=""
         type="email"
         {...register("email")}
       />
-      <label htmlFor="age">Age</label>
+      <label htmlFor="age">年齢</label>
       <input
         defaultValue={intialValues.age}
-        placeholder="0"
+        placeholder=""
         type="text"
         {...register("age", {
           validate: {
@@ -60,7 +50,7 @@ function Form() {
         })}
       />
       {errors.age && errors.age.type === "positiveNumber" && (
-        <p>Your age is invalid</p>
+        <p>年齢が正しく入力されていません</p>
       )}
       {errors.age && errors.age.type === "lessThanHundred" && (
         <p>Your age should be greater than 200</p>
