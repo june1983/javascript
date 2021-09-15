@@ -68,13 +68,12 @@ a{
   }
 }
 
-.main-visual{
+.main-visual {
   width: 100%;
   height: 100vh;
-  padding: 100px;
-  /*text-align: center;*/
   background-image: url("../img/Moon-missions.jpg");
   background-size: cover;
+  position: relative;
 }
 
 @media (min-width: 736px){
@@ -86,7 +85,35 @@ a{
 @media (max-width: 735px) {
   .main-visual {
     height: 750px;
-    padding: 60px 20px 0px 20px;
+  }
+}
+
+.bg{
+  /*位置の設定*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+    /*背景画像の設定*/
+    background-color: black;
+
+    /*透過の設定*/
+    opacity: 0.6;
+} 
+
+.inner-main-visual {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 100px;
+
+}
+
+@media (max-width: 500px) {
+  .inner-main-visual {
+    padding: 10px;
   }
 }
 

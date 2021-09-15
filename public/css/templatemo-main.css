@@ -484,6 +484,10 @@ footer p {
   margin-bottom: 0px;
 }
 
+footer  p::before {
+  display: none;
+}
+
 footer em {
   color: #ff8e43;
   font-weight: 600;
